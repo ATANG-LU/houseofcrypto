@@ -20,6 +20,7 @@ export const PARTNERS: Partner[] = [
   { name: "Chainlock", logo: "/partners/chainlock.svg" },
   { name: "Cipher", logo: "/partners/cipher.svg" },
   { name: "Bastion", logo: "/partners/bastion.svg" },
+  { name: "Trust Wallet", logo: "/partners/trust-wallet.svg" },
 ];
 
 // How many empty slots to show while PARTNERS is empty.
