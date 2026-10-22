@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* House Of Crypto palette (from the FinanceFlow design) */
+  --color-ink: #02061f;        /* page background */
+  --color-ink-2: #010725;      /* darker band */
+  --color-navy: #010d50;       /* cards, footer */
+  --color-navy-2: #1c2563;     /* raised card inside footer */
+  --color-slate: #1a203b;      /* secondary button */
+  --color-brand: #0328ee;      /* primary electric blue */
+  --color-brand-hover: #2346ff;
+  --color-brand-soft: #4c6bff;
+  --color-device: #353447;     /* device bezel fill */
+  --color-up: #19c37d;
+  --color-down: #ff5470;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Soft blue glow used behind hero / sections */
+.glow {
+  background:
+    radial-gradient(60% 50% at 70% 60%, rgba(3, 40, 238, 0.35), transparent 70%),
+    radial-gradient(50% 40% at 15% 10%, rgba(3, 40, 238, 0.18), transparent 70%);
+}
+.glow-center {
+  background: radial-gradient(55% 55% at 50% 50%, rgba(3, 40, 238, 0.45), transparent 70%);
+}
+
+/* Article typography for blog posts */
+.prose-hoc h2 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+}
+.prose-hoc h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+}
+.prose-hoc p {
+  color: rgb(255 255 255 / 0.85);
+  line-height: 1.8;
+  margin-bottom: 1.1rem;
+}
+.prose-hoc ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1.1rem;
+  color: rgb(255 255 255 / 0.85);
+  line-height: 1.8;
+}
+.prose-hoc strong {
+  color: #fff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
